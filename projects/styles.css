@@ -22,9 +22,9 @@ svg.hidden {
     margin: 0;
     padding: 0;
     font-family: "Segoe UI";
-    transition: background-color 100ms ease-in-out,
-                color 100ms ease-in-out,
-                fill 100ms ease-in-out;
+    transition: background-color 50ms ease-in-out,
+                color 50ms ease-in-out,
+                fill 50ms ease-in-out;
 }
 
 body {
@@ -98,9 +98,31 @@ main {
 }
 
 h1 {
-    margin: 5px;
+    margin: 10px;
 }
 
-p {
-    margin: 5px;
+main ul {
+    margin: 10px;
+}
+
+main ul li {
+    margin: 10px;
+}
+
+main a {
+    text-decoration: none;
+    color: var(--txt-clr);
+}
+
+main svg {
+    height: 1em;
+    aspect-ratio: 1;
+    fill: var(--txt-clr);
+}
+
+code {
+    padding: 4px;
+    font-family: Monospace;
+    border-radius: 5px;
+    background-color: var(--bg-clr1);
 }

@@ -16,14 +16,12 @@ themeToggle.onclick = function () {
             document.documentElement.classList.add("lightTheme");
             themeToggle.children[0].classList.add("hidden");
             themeToggle.children[1].classList.remove("hidden");
-            console.log("switched theme to: light");
             break;
         case "light":
             localStorage.setItem("theme", "dark");
             document.documentElement.classList.remove("lightTheme");
             themeToggle.children[0].classList.remove("hidden");
             themeToggle.children[1].classList.add("hidden");
-            console.log("switched theme to: dark");
             break;
     }
 }
