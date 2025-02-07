@@ -93,7 +93,7 @@ nav ul li button {
 
 main {
     margin-top: 65px;
-    height: calc(100% - 65px);
+    height: calc(100vh - 65px);
     display: flex;
     flex-direction: column;
     align-items: center;
