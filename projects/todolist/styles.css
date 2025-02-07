@@ -1,0 +1,176 @@
+:root {
+    --accent-clr: #0000ff;
+    --bg-clr0: #000011;
+    --bg-clr: #111122;
+    --bg-clr1: #222233;
+    --bg-clr2: #333344;
+    --txt-clr: #ffffff;
+}
+
+.lightTheme {
+    --txt-clr: #000000;
+    --bg-clr0: #000011;
+    --bg-clr: #eeeeff;
+    --bg-clr1: #ddddee;
+    --bg-clr2: #ccccdd;
+}
+
+svg.hidden {
+    display: none !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI";
+    transition: background-color 100ms ease-in-out,
+                color 100ms ease-in-out,
+                fill 100ms ease-in-out;
+}
+
+body {
+    background-color: var(--bg-clr);
+    color: var(--txt-clr);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 100%;
+    right: 100%;
+    width: 100%;
+    height: 65px;
+    box-shadow: 0px 0px 10px var(--bg-clr0);
+    background-color: var(--bg-clr1);
+}
+
+nav ul {
+    display: flex;
+    height: 100%;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+    height: 100%;
+}
+
+nav ul li:first-child {
+    margin-right: auto;
+}
+
+nav ul li:first-child a button {
+    display: inline-flex;
+    align-items: center;
+}
+
+#icon {
+    height: 100%;
+    fill: var(--txt-clr);
+}
+
+#themeToggle svg {
+    height: 50%;
+    fill: var(--txt-clr);
+}
+
+nav ul li a {
+    text-decoration: none;
+    height: 100%;
+}
+
+nav ul li button {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    border-style: none;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--bg-clr1);
+    color: var(--txt-clr);
+}
+
+main {
+    margin-top: 65px;
+    height: calc(100% - 65px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 10px 10px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border-radius: 15px;
+    margin: 10px 10px;
+    width: 50%;
+    height: 50%;
+    overflow: scroll;
+    border: line 2px White;
+    background-color: var(--bg-clr1);
+    box-shadow: 0px 0px 5px var(--bg-clr0);
+}
+
+div ul {
+    list-style: none;
+}
+
+div ul li {
+    font-size: 1.1em;
+    margin: 15px 15px;
+    padding: 15px 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px var(--bg-clr0);
+    background-color: var(--bg-clr);
+}
+
+div ul p {
+    margin: 15px 15px;
+    padding: 15px 5px;
+    text-align: center;
+}
+
+li button {
+    padding: 5px 5px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: var(--accent-clr);
+}
+
+section input {
+    margin: 10px 10px;
+    padding: 8px 10px;
+    border-radius: 15px;
+    border: none;
+    color: var(--txt-clr);
+    background-color: var(--bg-clr1);
+    box-shadow: 0px 0px 5px var(--bg-clr0);
+    transition: background-color 250ms 0ms ease-in-out;
+}
+
+section input:focus {
+    outline:none;
+    background-color: var(--bg-clr2);
+}
+
+section button {
+    margin: 10px 10px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 15px;
+    color: var(--accent-clr);
+    font-weight: bold;
+    background-color: var(--bg-clr1);
+    box-shadow: 0px 0px 5px var(--bg-clr0);
+}
+
+section button:active {
+    color: var(--txt-clr);
+    background-color: var(--accent-clr);
+}
