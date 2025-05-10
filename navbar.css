@@ -101,7 +101,6 @@ nav ul li button {
 
 main {
     margin-top: 65px;
-    padding: 5px;
     background-color: var(--bg-clr);
     color: var(--txt-clr);
 }
