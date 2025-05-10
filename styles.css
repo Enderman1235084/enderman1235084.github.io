@@ -5,6 +5,8 @@
     transition: background-color 100ms ease-in-out,
                 color 100ms ease-in-out,
                 fill 100ms ease-in-out;
+}
+
 h1 {
     margin: 5px;
 }
