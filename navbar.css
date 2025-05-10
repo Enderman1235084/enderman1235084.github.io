@@ -26,15 +26,6 @@ svg.hidden {
     display: none !important;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Segoe UI";
-    transition: background-color 100ms ease-in-out,
-                color 100ms ease-in-out,
-                fill 100ms ease-in-out;
-}
-
 body {
     background-color: var(--bg-clr);
     color: var(--txt-clr);
