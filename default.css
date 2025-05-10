@@ -95,7 +95,7 @@ nav ul li button {
     border-style: none;
     font-size: 1rem;
     font-weight: bold;
-    background-color: var(--bg-clr1);
+    background-color: transparent;
     color: var(--txt-clr);
 }
 
