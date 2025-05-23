@@ -1,25 +1,23 @@
 :root {
-    --accent-clr: #0000ff;
-    --txt-clr: #ffffff;
-    --bg-clr0: #000011;
-    --bg-clr: #111122;
-    --bg-clr-trans: rgba(17, 17, 34, 0.5);
-    --bg-clr1: #222233;
-    --bg-clr1-trans: rgba(34, 34, 51, 0.5);
-    --bg-clr2: #333344;
-    --bg-clr2-trans: rgba(51, 51, 68, 0.5);
+    --accent-clr: #0099cc;
+    --txt-clr: #e0e0e0;
+    --bg-clr0: #0f0f0f;
+    --bg-clr: #1a1a1a;
+    --bg-clr-trans: rgba(26, 26, 26, 0.7);
+    --bg-clr1: #252525;
+    --bg-clr1-trans: rgba(37, 37, 37, 0.7);
+    --shadow-clr: rgba(0, 0, 0, 0.7);
 }
 
-.lightTheme {
-    --accent-clr: #0000ff;
-    --txt-clr: #000000;
-    --bg-clr0: #000011;
-    --bg-clr: #eeeeff;
-    --bg-clr-trans: rgba(238, 238, 255, 0.5);
-    --bg-clr1: #ddddee;
-    --bg-clr1-trans: rgba(221, 221, 238, 0.5);
-    --bg-clr2: #ccccdd;
-    --bg-clr2-trans: rgba(154, 154, 221, 0.5);
+:root.lightTheme {
+    --accent-clr: #0099cc;
+    --txt-clr: #1a1a1a;
+    --bg-clr0: #f0f0f0;
+    --bg-clr: #e5e5e5;
+    --bg-clr-trans: rgba(229, 229, 229, 0.7);
+    --bg-clr1: #dadada;
+    --bg-clr1-trans: rgba(218, 218, 218, 0.7);
+    --shadow-clr: rgba(0, 0, 0, 0.7);
 }
 
 svg.hidden {
