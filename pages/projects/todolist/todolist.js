@@ -1,46 +1,15 @@
-const themeToggle = document.getElementById("themeToggle");
 const taskList = document.getElementById("taskList");
 const taskInput = document.getElementById("taskInput");
 let allTasks = [];
 
-// Theme Functions
-if (localStorage.getItem("theme") === null) {
-    localStorage.setItem("theme", "dark");
-}
-else if (localStorage.getItem("theme") == "light") {
-    document.documentElement.classList.add("lightTheme");
-    themeToggle.children[0].classList.add("hidden");
-    themeToggle.children[1].classList.remove("hidden");
-}
-
-themeToggle.onclick = function () {
-    switch (localStorage.getItem("theme")) {
-        case "dark":
-            localStorage.setItem("theme", "light");
-            document.documentElement.classList.add("lightTheme");
-            themeToggle.children[0].classList.add("hidden");
-            themeToggle.children[1].classList.remove("hidden");
-            break;
-        case "light":
-            localStorage.setItem("theme", "dark");
-            document.documentElement.classList.remove("lightTheme");
-            themeToggle.children[0].classList.remove("hidden");
-            themeToggle.children[1].classList.add("hidden");
-            break;
-    }
-}
-
-// Load Items From localStorage
 if (Boolean(localStorage.getItem("toDoTasks"))) {
     JSON.parse(localStorage.getItem("toDoTasks")).forEach(addTask);
 }
 
-// Storing of tasks
 function updateTasks() {
     localStorage.setItem("toDoTasks", JSON.stringify(allTasks))
 }
 
-// Task Functions
 function anyTasks() {
     if (taskList.children.length == 0) {
         const noTasksMsg = document.createElement("p");

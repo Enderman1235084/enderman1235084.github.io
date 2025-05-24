@@ -32,10 +32,25 @@ function toggleTheme() {
 function updateDynamicPage() {
     switch (window.location.pathname.slice(1)) {
         case "":
-            jsjs.load({ html: "/pages/home/home.html" })
+            jsjs.load({
+                html: "/pages/home/home.html",
+                css: "/pages/home/home.css"
+            });
             break;
-        
+        case "about":
+            jsjs.load({
+                html: "/pages/about/about.html",
+                css: "/pages/about/about.html"
+            });
+            break;
         default:
             document.write("<p style='text-align: center;'>404: Page not found</p>");
     }
 }
+
+window.onpopstate = updateDynamicPage;
+
+window.addEventListener("DOMContentLoaded", event => {
+    jsjs.dynamicElement = document.querySelector("main");
+    updateDynamicPage();
+});
