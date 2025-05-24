@@ -31,7 +31,7 @@ function toggleTheme() {
 
 function updateDynamicPage() {
     switch (window.location.pathname.slice(1)) {
-        case "":
+        case "index.html":
             jsjs.load({
                 html: "/pages/home/home.html",
                 css: "/pages/home/home.css"
@@ -44,13 +44,24 @@ function updateDynamicPage() {
             });
             break;
         default:
-            document.write("<p style='text-align: center;'>404: Page not found</p>");
+            jsjs.load({
+                html: "/pages/404/404.html",
+                css: "/pages/404/404.css"
+            });
     }
 }
 
 window.onpopstate = updateDynamicPage;
 
 window.addEventListener("DOMContentLoaded", event => {
+    const navLinks = document.querySelectorAll("a");
     jsjs.dynamicElement = document.querySelector("main");
     updateDynamicPage();
+    for (let link of navLinks) {
+        link.addEventListener("click", event => {
+            event.preventDefault();
+            updateDynamicPage();
+            history.pushState(null, "",  link.getAttribute("href"));
+        });
+    }
 });
