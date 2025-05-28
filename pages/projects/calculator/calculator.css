@@ -7,72 +7,75 @@ main {
 }
 
 #calculatorBody {
-	background-color: var(--bg-clr1);
-	border-radius: 5px;
-	width: 249px;
-	padding: 15px;
-	box-shadow: 0px 0px 5px #000000;
+    background-color: var(--bg-clr1);
+    border-radius: 5px;
+    width: 249px;
+    padding: 15px;
+    box-shadow: 0px 0px 5px #000000;
 }
 
 #buttonDiv {
-	margin-top: 5px;
+    margin-top: 5px;
 }
 
 .buttons {
-	border-style: none;
-	border-radius: 10px;
-	width: 50px;
-	height: 42px;
-	font-size: 28px;
-	margin: 4.491px;
-	margin-top: 4px;
-	margin-bottom: 4px;
-	color: var(--txt-clr);
-	background-color: var(--bg-clr2);
-	box-shadow: 0px 0px 5px var(--bg-clr0);
+    border-style: none;
+    border-radius: 10px;
+    width: 50px;
+    height: 42px;
+    font-size: 28px;
+    margin: 4.491px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    color: var(--txt-clr);
+    background-color: var(--bg-clr2);
+    box-shadow: 0px 0px 5px var(--bg-clr0);
 }
 
 .bButtons {
-	border-style: none;
-	border-radius: 10px;
-	width: 50px;
-	height: 42px;
-	font-size: 28px;
-	margin: 4.491px;
-	margin-top: 4px;
-	margin-bottom: 4px;
-	color: var(--txt-clr);
-	background-color: var(--accent-clr);
-	box-shadow: 0px 0px 5px var(--bg-clr0);
+    border-style: none;
+    border-radius: 10px;
+    width: 50px;
+    height: 42px;
+    font-size: 28px;
+    margin: 4.491px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    color: var(--txt-clr);
+    background-color: var(--accent-clr);
+    box-shadow: 0px 0px 5px var(--bg-clr0);
 }
 
 .buttons:active {
-	border-style: solid;
-	border-width: 2px;
-	border-color: var(--bg-clr1);
-	box-shadow: 1px 1px 2px var(--bg-clr0) inset;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--bg-clr1);
+    box-shadow: 1px 1px 2px var(--bg-clr0) inset;
 }
 
 .bButtons:active {
-	border-style: solid;
-	border-width: 2px;
-	border-color: var(--accent-clr);
-	box-shadow: 1px 1px 2px var(--bg-clr0) inset;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--accent-clr);
+    font-family: Roboto;
+    color: var(--txt-clr);
+    box-shadow: 1px 1px 2px var(--bg-clr0) inset;
 }
 
 #resultWindow {
     overflow: scroll;
-	border-style: none;
-	border-radius: 10px;
-	margin-bottom: 0px;
-	padding: 5px;
-	width: 239px;
-	height: 41px;
-	font-size: 28px;
-	color: var(--txt-clr);
-	background-color: var(--bg-clr2);
-	text-align: right;
-	box-shadow: 0px 0px 5px var(--bg-clr0);
+    border-style: none;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    padding: 5px;
+    width: 239px;
+    height: 41px;
+    font-size: 28px;
+    font-family: Roboto;
+    color: var(--txt-clr);
+    background-color: var(--bg-clr2);
+    text-align: right;
+    box-shadow: 0px 0px 5px var(--bg-clr0);
 }
 
 #resultWindow:focus {

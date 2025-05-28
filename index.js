@@ -29,25 +29,22 @@ function toggleTheme() {
     }
 }
 
-function updateDynamicPage() {
-    switch (window.location.pathname.slice(1)) {
-        case "index.html":
-            jsjs.load({
-                html: "/pages/home/home.html",
-                css: "/pages/home/home.css"
-            });
-            break;
-        case "about":
-            jsjs.load({
-                html: "/pages/about/about.html",
-                css: "/pages/about/about.html"
-            });
-            break;
-        default:
-            jsjs.load({
-                html: "/pages/404/404.html",
-                css: "/pages/404/404.css"
-            });
+async function updateDynamicPage() {
+    const response = await fetch("/pages/pagemaps.json");
+    if (!response.ok) {
+        console.error("Error with fetch, status text: " + response.statusText);
+        return;
+    }
+    const pagemaps = await response.json();
+    if (window.location.pathname.slice(1) in pagemaps) {
+        jsjs.load(pagemaps[window.location.pathname.slice(1)]);
+    }
+    else {
+        jsjs.load({
+            html: "/pages/404/404.html",
+            css: "/pages/404/404.css",
+            js: "/pages/404/404.js"
+        });
     }
 }
 

@@ -6,7 +6,8 @@ main {
 }
 
 h1 {
-    margin: 10px 10px;
+    margin: 10px;
+    font-family: Roboto;
 }
 
 div {
@@ -29,6 +30,8 @@ div ul {
 
 div ul li {
     font-size: 1.1em;
+    font-family: Roboto;
+    color: var(--txt-clr);
     margin: 15px 15px;
     padding: 15px 15px;
     border-radius: 15px;
@@ -40,6 +43,8 @@ div ul p {
     margin: 15px 15px;
     padding: 15px 5px;
     text-align: center;
+    font-family: Roboto;
+    color: var(--txt-clr);
 }
 
 li button {
@@ -54,6 +59,7 @@ section input {
     padding: 8px 10px;
     border-radius: 15px;
     border: none;
+    font-family: Roboto;
     color: var(--txt-clr);
     background-color: var(--bg-clr1);
     box-shadow: 0px 0px 5px var(--bg-clr0);
@@ -72,6 +78,7 @@ section button {
     border-radius: 15px;
     color: var(--accent-clr);
     font-weight: bold;
+    font-family: Roboto;
     background-color: var(--bg-clr1);
     box-shadow: 0px 0px 5px var(--bg-clr0);
 }

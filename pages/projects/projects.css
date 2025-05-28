@@ -4,6 +4,7 @@ main {
 
 h1 {
     margin: 10px;
+    font-family: Roboto;
 }
 
 main ul {
@@ -16,6 +17,7 @@ main ul li {
 
 main a {
     text-decoration: none;
+    font-family: Roboto;
     color: var(--txt-clr);
 }
 

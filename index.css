@@ -20,6 +20,11 @@
     --shadow-clr: rgba(0, 0, 0, 0.7);
 }
 
+@font-face {
+    font-family: Roboto;
+    src: url("/fonts/roboto.ttf");
+}
+
 svg.hidden {
     display: none !important;
 }
@@ -91,6 +96,7 @@ nav ul li button {
     align-items: center;
     height: 100%;
     border-style: none;
+    font-family: Roboto;
     font-size: 1rem;
     font-weight: bold;
     background-color: transparent;
@@ -100,5 +106,4 @@ nav ul li button {
 main {
     margin-top: 65px;
     background-color: var(--bg-clr);
-    color: var(--txt-clr);
 }
