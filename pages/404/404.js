@@ -1,1 +1,0 @@
-document.getElementById("urlPathname").textContent = window.location.pathname;
