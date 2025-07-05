@@ -9,7 +9,6 @@
     --accent-clr: hsla(200, 70%, 50%);
     --txt-clr: hsl(from var(--accent-clr) h 15% 10%);
     --bg-clr: hsl(from var(--accent-clr) h 15% 95%);
-    --shadow-clr: hsla(0, 0%, 0%, 0.7);
 }
 
 @font-face {
@@ -54,7 +53,8 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 10px;
+    padding: 0 5px;
     height: 100%;
 }
 
@@ -83,6 +83,7 @@ nav ul li a {
 }
 
 nav ul li button {
+    padding: 0 5px;
     display: inline-flex;
     align-items: center;
     height: 100%;

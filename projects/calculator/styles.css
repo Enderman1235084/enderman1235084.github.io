@@ -7,7 +7,7 @@ main {
 }
 
 #calculatorBody {
-    background-color: var(--bg-clr1);
+    background-color: hsl(from var(--bg-clr) h s calc(l + 5%));
     border-radius: 5px;
     width: 249px;
     padding: 15px;
@@ -28,8 +28,8 @@ main {
     margin-top: 4px;
     margin-bottom: 4px;
     color: var(--txt-clr);
-    background-color: var(--bg-clr2);
-    box-shadow: 0px 0px 5px var(--bg-clr0);
+    background-color: hsl(from var(--bg-clr) h s calc(l + 10%));
+    box-shadow: 0px 0px 5px hsl(from var(--bg-clr) h s calc(l - 5%));
 }
 
 .bButtons {
@@ -43,14 +43,14 @@ main {
     margin-bottom: 4px;
     color: var(--txt-clr);
     background-color: var(--accent-clr);
-    box-shadow: 0px 0px 5px var(--bg-clr0);
+    box-shadow: 0px 0px 5px hsl(from var(--bg-clr) h s calc(l - 5%));
 }
 
 .buttons:active {
     border-style: solid;
     border-width: 2px;
-    border-color: var(--bg-clr1);
-    box-shadow: 1px 1px 2px var(--bg-clr0) inset;
+    border-color: hsl(from var(--bg-clr) h s calc(l + 5%));
+    box-shadow: 1px 1px 2px hsl(from var(--bg-clr) h s calc(l - 5%)) inset;
 }
 
 .bButtons:active {
@@ -59,7 +59,7 @@ main {
     border-color: var(--accent-clr);
     font-family: Roboto;
     color: var(--txt-clr);
-    box-shadow: 1px 1px 2px var(--bg-clr0) inset;
+    box-shadow: 1px 1px 2px hsl(from var(--bg-clr) h s calc(l - 5%)) inset;
 }
 
 #resultWindow {
@@ -73,9 +73,9 @@ main {
     font-size: 28px;
     font-family: Roboto;
     color: var(--txt-clr);
-    background-color: var(--bg-clr2);
+    background-color: hsl(from var(--bg-clr) h s calc(l + 10%));
     text-align: right;
-    box-shadow: 0px 0px 5px var(--bg-clr0);
+    box-shadow: 0px 0px 5px hsl(from var(--bg-clr) h s calc(l - 5%));
 }
 
 #resultWindow:focus {
