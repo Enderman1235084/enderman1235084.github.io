@@ -29,7 +29,7 @@ main svg {
 
 code {
     padding: 4px;
-    font-family: Monospace;
+    font-family: "JetBrains Mono";
     border-radius: 5px;
-    background-color: var(--bg-clr1);
+    background-color: var(--surface-clr);
 }

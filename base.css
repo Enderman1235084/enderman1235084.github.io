@@ -1,19 +1,39 @@
 :root {
-    --accent-clr: hsl(200 70% 50%);
-    --txt-clr: hsl(from var(--accent-clr) h 15% 95%);
-    --bg-clr: hsl(from var(--accent-clr) h 15% 10%);
-    --shadow-clr: hsl(0 0% 0% / 0.7);
+    --accent-clr: oklch(60% 0.4 50);
+    --primary-clr: oklch(50% 0.4 200);
+    --secondary-clr: oklch(30% 0.3 270);
+    --bg-clr: oklch(from var(--primary-clr) 20% 0.025 h);
+    --surface-clr: oklch(from var(--primary-clr) 25% 0.025 h);
+    --surface-clr-trans: oklch(from var(--surface-clr) l c h / 0.5);
+    --surface-clr-light: oklch(from var(--primary-clr) 30% 0.025 h);
+    --hvr-clr: oklch(from var(--primary-clr) 40% 0.025 h);
+    --txt-clr: oklch(from var(--primary-clr) 95% 0.025 h);
+    --muted-txt-clr: oklch(from var(--txt-clr) l c h / 0.7);
+    --shadow-clr: oklch(0% 0 0 / 0.2);
 }
 
 :root.lightTheme {
-    --accent-clr: hsla(200, 70%, 50%);
-    --txt-clr: hsl(from var(--accent-clr) h 15% 10%);
-    --bg-clr: hsl(from var(--accent-clr) h 15% 95%);
+    --accent-clr: oklch(60% 0.4 30);
+    --primary-clr: oklch(75% 0.3 200);
+    --secondary-clr: oklch(75% 0.3 270);
+    --bg-clr-dark: oklch(from var(--primary-clr) 90% 0.025 h);
+    --bg-clr: oklch(from var(--primary-clr) 90% 0.025 h);
+    --surface-clr: oklch(from var(--primary-clr) 85% 0.025 h);
+    --surface-clr-trans: oklch(from var(--surface-clr) l c h / 0.5);
+    --surface-clr-light: oklch(from var(--primary-clr) 80% 0.025 h);
+    --hvr-clr: oklch(from var(--primary-clr) 70% 0.025 h);
+    --txt-clr: oklch(from var(--primary-clr) 15% 0.025 h);
+    --muted-txt-clr: oklch(from var(--txt-clr) l c h / 0.7);
 }
 
 @font-face {
     font-family: Roboto;
     src: url("/fonts/roboto.ttf");
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("/fonts/jetbrains_mono.ttf");
 }
 
 svg.hidden {
@@ -41,8 +61,8 @@ nav {
     right: 100%;
     width: 100%;
     height: 65px;
-    box-shadow: 0px 0px 10px hsl(from var(--bg-clr) h s calc(l - 5%));
-    background-color: hsl(from var(--accent-clr) h 15% calc(l + 5%));
+    box-shadow: 0px 0px 10px var(--shadow-clr);
+    background: var(--surface-clr-trans);
     backdrop-filter: blur(5px);
 }
 
@@ -97,5 +117,5 @@ nav ul li button {
 
 main {
     margin-top: 65px;
-    background-color: var(--bg-clr);
+    background-color: transparent;
 }
