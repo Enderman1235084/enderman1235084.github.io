@@ -1,7 +1,10 @@
 :root {
-    --accent-clr: oklch(60% 0.4 50);
-    --primary-clr: oklch(50% 0.4 200);
-    --secondary-clr: oklch(30% 0.3 270);
+    --navbar-height: 65px;
+    
+    --accent-clr: oklch(0.75 0.21 185);
+    --primary-clr: oklch(55% 0.4 200);
+    --secondary-clr: oklch(35% 0.3 270);
+    --full-clr: black;
     --bg-clr: oklch(from var(--primary-clr) 20% 0.025 h);
     --surface-clr: oklch(from var(--primary-clr) 25% 0.025 h);
     --surface-clr-trans: oklch(from var(--surface-clr) l c h / 0.5);
@@ -13,10 +16,8 @@
 }
 
 :root.lightTheme {
-    --accent-clr: oklch(60% 0.4 30);
-    --primary-clr: oklch(75% 0.3 200);
-    --secondary-clr: oklch(75% 0.3 270);
-    --bg-clr-dark: oklch(from var(--primary-clr) 90% 0.025 h);
+    --accent-clr: oklch(60% 0.4 185);
+    --full-clr: white;
     --bg-clr: oklch(from var(--primary-clr) 90% 0.025 h);
     --surface-clr: oklch(from var(--primary-clr) 85% 0.025 h);
     --surface-clr-trans: oklch(from var(--surface-clr) l c h / 0.5);
@@ -60,7 +61,7 @@ nav {
     bottom: 100%;
     right: 100%;
     width: 100%;
-    height: 65px;
+    height: var(--navbar-height);
     box-shadow: 0px 0px 10px var(--shadow-clr);
     background: var(--surface-clr-trans);
     backdrop-filter: blur(5px);
@@ -116,6 +117,6 @@ nav ul li button {
 }
 
 main {
-    margin-top: 65px;
+    margin-top: var(--navbar-height);
     background-color: transparent;
 }
