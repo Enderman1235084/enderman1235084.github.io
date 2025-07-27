@@ -1,7 +1,7 @@
 :root {
     --navbar-height: 65px;
     
-    --accent-clr: oklch(0.75 0.21 185);
+    --accent-clr: oklch(75% 0.4 185);
     --primary-clr: oklch(55% 0.4 200);
     --secondary-clr: oklch(35% 0.3 270);
     --full-clr: black;
@@ -16,7 +16,7 @@
 }
 
 :root.lightTheme {
-    --accent-clr: oklch(60% 0.4 185);
+    --accent-clr: oklch(50% 0.4 185);
     --full-clr: white;
     --bg-clr: oklch(from var(--primary-clr) 90% 0.025 h);
     --surface-clr: oklch(from var(--primary-clr) 85% 0.025 h);
